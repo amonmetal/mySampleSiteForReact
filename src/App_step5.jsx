@@ -133,12 +133,6 @@ function App() {
     document.body.style.color = '#ffffff'; // 文字色を白に変更して見やすくする
 
     console.log(`[App] 現在のパス: ${location.pathname}, カウント: ${currentCount}, 背景色: ${selectedColor}`);
-
-    // クリーンアップ関数: Appコンポーネントがアンマウントされるときに実行される
-    return () => {
-      document.body.style.backgroundColor = '';
-      document.body.style.color = '';
-    };
   }, [location.pathname, pageCounters]); // 依存配列に pageCounters を追加し、値が変更されたら副作用が再実行されるようにします。
 
   return (
