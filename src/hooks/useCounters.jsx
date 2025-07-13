@@ -22,9 +22,9 @@ const useCounters = () => {
 
   // カウンターの状態と更新関数をオブジェクトとして返す
   return {
-    homeCount, setHomeCount, incrementHome,
-    aboutCount, setAboutCount, incrementAbout,
-    contactCount, setContactCount, incrementContact,
+    homeCount, setHomeCount,
+    aboutCount, setAboutCount,
+    contactCount, setContactCount,
   };
 };
 
